@@ -1,19 +1,19 @@
 # 目录
 
-* [简介](docs/README.md)
+* [简介](README.md)
 
 ## 管理员指南
-* [任务管理](docs/admin/tasks.md)
-* [内容管理](docs/admin/content.md)
+* [任务管理](admin/tasks.md)
+* [内容管理](admin/content.md)
 
 ## 账户与支付
-* [账户管理](docs/manager/accounts.md)
-* [支付管理](docs/manager/payment.md)
+* [账户管理](manager/accounts.md)
+* [支付管理](manager/payment.md)
 
 ## 常见问题
-* [使用限制](docs/faq/limits.md)
-* [Telegram 相关](docs/faq/telegram.md)
+* [使用限制](faq/limits.md)
+* [Telegram 相关](faq/telegram.md)
 
 ## 其他
-* [卖家指南](docs/market/seller.md)
-* [工作区](docs/staff/workspace.md) 
+* [卖家指南](market/seller.md)
+* [工作区](staff/workspace.md) 

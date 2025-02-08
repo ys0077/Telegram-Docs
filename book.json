@@ -3,10 +3,10 @@
   "description": "项目说明文档",
   "language": "zh-hans",
   "structure": {
-    "readme": "docs/README.md",
+    "readme": "README.md",
     "summary": "SUMMARY.md"
   },
-  "root": "./",
+  "root": "./docs",
   "plugins": [
     "-sharing",
     "search-pro",
@@ -21,7 +21,7 @@
   },
   "links": {
     "sidebar": {
-      "Home": "https://xxx.github.io/Telegram-Docs"
+      "Home": "https://ys0077.github.io/Telegram-Docs"
     }
   }
 } 
