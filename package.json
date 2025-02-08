@@ -1,0 +1,14 @@
+{
+  "name": "telegram-docs",
+  "version": "1.0.0",
+  "description": "Telegram Documentation",
+  "main": "index.js",
+  "scripts": {
+    "build": "gitbook build",
+    "serve": "gitbook serve"
+  },
+  "dependencies": {
+    "gitbook-cli": "^2.3.2",
+    "graceful-fs": "^4.2.0"
+  }
+} 
