@@ -21,21 +21,25 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '12.22.12'  # 使用较低版本的 Node.js
 
       - name: Install GitBook CLI
         run: |
           npm install -g gitbook-cli
           gitbook -v
           
+      - name: Fix graceful-fs issue
+        run: |
+          cd /opt/hostedtoolcache/node/12.22.12/x64/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/
+          npm install graceful-fs@4.2.0 --save
+
       - name: Check directory structure
         run: |
           pwd
           ls -la
           
-      - name: Install dependencies and plugins
+      - name: Install dependencies
         run: |
-          npm install
           gitbook install
           
       - name: Check book.json and SUMMARY.md
