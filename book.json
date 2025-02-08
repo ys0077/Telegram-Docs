@@ -13,5 +13,15 @@
     "expandable-chapters",
     "back-to-top-button",
     "copy-code-button"
-  ]
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    }
+  },
+  "links": {
+    "sidebar": {
+      "Home": "https://xxx.github.io/Telegram-Docs"
+    }
+  }
 } 

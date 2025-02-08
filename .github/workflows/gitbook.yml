@@ -2,7 +2,7 @@ name: Deploy GitBook
 on:
   push:
     branches:
-      - main  # 根据您的默认分支修改
+      - main  # 确保这里是您的默认分支名称
     paths:
       - 'docs/**'
       - 'book.json'
@@ -28,14 +28,27 @@ jobs:
         run: |
           npm install -g gitbook-cli
           gitbook -v
-
+          
+      - name: Check directory structure
+        run: |
+          pwd
+          ls -la
+          
       - name: Install dependencies and plugins
         run: |
           gitbook install
           npm install graceful-fs@4.2.0 --save-dev
+          
+      - name: Check book.json and SUMMARY.md
+        run: |
+          cat book.json
+          echo "---"
+          cat SUMMARY.md
 
       - name: Build GitBook
-        run: gitbook build
+        run: |
+          gitbook build
+          ls -la _book
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -43,4 +56,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_book
           force_orphan: true
-          commit_message: 'docs: update gitbook documentation' 
+          commit_message: 'docs: update gitbook documentation'
+          
+      - name: Output deployment info
+        run: |
+          echo "Deployment completed"
+          echo "Please check https://<username>.github.io/Telegram-Docs" 
