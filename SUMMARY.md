@@ -1,8 +1,8 @@
 # TG云控使用说明
 
-* [管理员操作指南](admin/README.md)
+* [admin](admin/README.md)
 
-* [常见问题解答(FAQ)](faq/README.md)
+* [faq](faq/README.md)
   * [TG国家发送风控](faq/limits.md)
   * [Telegram操作教程](faq/telegram.md)
 
