@@ -1,0 +1,17 @@
+{
+  "title": "项目文档",
+  "description": "项目说明文档",
+  "language": "zh-hans",
+  "structure": {
+    "readme": "docs/README.md",
+    "summary": "SUMMARY.md"
+  },
+  "root": "./",
+  "plugins": [
+    "-sharing",
+    "search-pro",
+    "expandable-chapters",
+    "back-to-top-button",
+    "copy-code-button"
+  ]
+} 
